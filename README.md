@@ -1,30 +1,81 @@
-# shvirtd-example-python
+# Домашнее задание к занятию 5. «Практическое применение Docker» - Бодарев В.В.
 
-Example Flask-application for docker compose training.
-## Installation
-First, you need to clone this repository:
+# Задание 0.
 
-```bash
-git clone https://github.com/netology-code/shvirtd-example-python.git
-```
+---
 
-Now, we will need to create a virtual environment and install all the dependencies:
+Убеждаемся что docker-compose не установлен
 
-```bash
-python3 -m venv venv  # on Windows, use "python -m venv venv" instead
-. venv/bin/activate   # on Windows, use "venv\Scripts\activate" instead
-pip install -r requirements.txt
-python main.py
-```
-You need to run Mysql database and provide following ENV-variables for connection:  
-- DB_HOST (default: '127.0.0.1')
-- DB_USER (default: 'app')
-- DB_PASSWORD (default: 'very_strong')
-- DB_NAME (default: 'example')
+![image alt](https://github.com/vasionxxx/shvirtd-example-python/blob/main/haproxy/reverse/0.1.jpg)
 
-The applications will always running on http://localhost:5000.  
-To exit venv just type ```deactivate```
+Убеждаемся что установлен docker compose
 
-## License
+![image alt](https://github.com/vasionxxx/shvirtd-example-python/blob/main/haproxy/reverse/0.2.jpg)
 
-This project is licensed under the MIT License (see the `LICENSE` file for details).
+---
+
+# Задание 1.
+
+---
+
+Создадим файл Dockerfile.python. Протестируем сборку
+
+![image alt](https://github.com/vasionxxx/shvirtd-example-python/blob/main/haproxy/reverse/1.1.jpg)
+
+---
+
+# Задание 3.
+
+---
+
+Скриншот sql-запроса
+
+![image alt](https://github.com/vasionxxx/shvirtd-example-python/blob/main/haproxy/reverse/3.1.jpg)
+
+---
+
+# Задание 4.
+
+---
+
+Протестируем сервис с сервера в Yandex Cloud
+
+![image alt](https://github.com/vasionxxx/shvirtd-example-python/blob/main/haproxy/reverse/4.1.jpg)
+
+Запустим наш скрипт на сервере в Yandex Cloud
+
+![image alt](https://github.com/vasionxxx/shvirtd-example-python/blob/main/haproxy/reverse/4.2.jpg)
+
+SQL-запрос с сервера в Yandex Cloud
+
+![image alt](https://github.com/vasionxxx/shvirtd-example-python/blob/main/haproxy/reverse/4.3.jpg)
+
+Гитхаб репозиторий - https://github.com/vasionxxx/shvirtd-example-python
+
+---
+
+# Задание 6.
+
+---
+Скачаем docker образ hashicorp/terraform:latest и скопируем бинарный файл /bin/terraform на свою локальную машину, используя dive и docker save.
+
+![image alt](https://github.com/vasionxxx/shvirtd-example-python/blob/main/haproxy/reverse/6.1.jpg)
+
+---
+
+# Задание 6.1.
+
+---
+
+Добьемся аналогичного результата, используя docker cp
+
+![image alt](https://github.com/vasionxxx/shvirtd-example-python/blob/main/haproxy/reverse/6.1.1.jpg)
+
+---
+
+
+
+
+
+
+
